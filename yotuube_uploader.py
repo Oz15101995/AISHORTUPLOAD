@@ -1,12 +1,10 @@
-# youtube_uploader.py
+
 import os
 import pickle
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-# Portée minimale pour uploader une vidéo
-##GOOGLE = ["https://www.googleapis.com/auth/youtube.upload"]
 
 def get_service():
     if os.path.exists("token.pickle"):
